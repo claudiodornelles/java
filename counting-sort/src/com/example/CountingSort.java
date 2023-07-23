@@ -7,14 +7,14 @@ public class CountingSort {
   public static void main(String[] args) {
     final int[] inputArray = {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
 
-    quickSort(inputArray);
+    countingSort(inputArray);
 
     for (int number : inputArray) {
       System.out.println(number);
     }
   }
 
-  private static void quickSort(int[] inputArray) {
+  private static void countingSort(int[] inputArray) {
     if (inputArray.length < 2) {
       return;
     }
